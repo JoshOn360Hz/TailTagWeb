@@ -939,7 +939,13 @@ img.loaded {
   .tech-icon i {
     color: #5dade2;
   }
-
-
-
+    .nav-menu {
+    background: rgba(26, 26, 26, 0.98);
+   
+  }
+  
 }
+
+
+
+
