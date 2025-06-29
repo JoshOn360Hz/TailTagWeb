@@ -3,233 +3,234 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TailTag</title>    
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link href="style.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="/src/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
-  <link rel="shortcut icon" href="/src/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/src/apple-touch-icon.png" />
+  <title>TailTag - Your Aircraft Logbook Reinvented</title>
+  <meta name="description" content="TailTag is a simple, modern aircraft logbook app for iOS. Keep track of aircraft you have seen or flown on like never before with a clean, intuitive interface.">
+  
+  <link rel="icon" type="image/png" href="src/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="src/favicon.svg" />
+  <link rel="shortcut icon" href="src/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="src/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="TailTag" />
-  <link rel="manifest" href="/src/site.webmanifest" />
+  <link rel="manifest" href="src/site.webmanifest" />
+  
+  <link rel="preload" as="image" href="src/logo.png">
+  <link rel="preload" as="image" href="src/sc1.png">
+  <link rel="preload" as="image" href="src/sc2.png">
+  <link rel="preload" as="image" href="src/sc3.png">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <meta property="og:title" content="TailTag - Your Aircraft Logbook Reinvented">
+  <meta property="og:description" content="Keep track of aircraft you have seen or flown on like never before with TailTag's clean, modern interface for iOS.">
+  <meta property="og:type" content="website">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">TailTag</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-        
-          <li class="nav-item"><a class="nav-link" href="#privacy">Privacy</a></li>
-          <li class="nav-item"><a class="nav-link" href="mailto:JoshCumulus@proton.me?subject=Contacting%20Cumulus&body=Hi%2C%20I%20have%20a%20question...">Contact</a></li>
-        </ul>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h1>TailTag</h1>
+      </div>
+      
+      <div class="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#privacy" class="nav-link">Privacy</a>
+        <a href="mailto:JoshCumulus@proton.me?subject=Contacting%20TailTag&body=Hi%2C%20I%20have%20a%20question..." class="nav-link">Contact</a>
+      </div>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </nav>
 
-  <section id="hero" class="hero-section">
+  <section id="home" class="hero">
     <div class="hero-content">
-      <div class="hero-text fade-in-up">
-        <img src="src/logo.png" alt="TailTag Icon" class="app-icon floating">
-        <h1 class="hero-title">Your Aircraft Logbook<br><span class="text-gradient">Reinvented.</span></h1>
-        <p class="hero-subtitle">Keep track of aircraft you have seen or flown on like never before.</p>
-        
-          <a href="https://apps.apple.com/us/app/tailtag/id6747738157" target="_blank" class="download-btn">
-        <i class="bi bi-apple"></i>
-       Download
-      </a>
-           <a href="https://testflight.apple.com/join/zXMv5qHd" target="_blank" class="download-btn always-visible">
-        <i class="bi bi-apple"></i>
-        Testflight Beta
-      </a>
-      </div>
-
-  </section>
-  
-  <div class="section-transition"></div>
-
-  <section id="screenshots" class="screenshots-section">
-  
-    <div class="parallax-container">
-    
-      <div class="text-reveal-section">
-        <h2 class="reveal-text">Track.</h2>
-        <h2 class="reveal-text">Your.</h2>
-        <h2 class="reveal-text">Skies.</h2>
-      </div>
-      <div class="image-reveal-container">
-        <img src="src/sc1.png" alt="Screenshot 1" class="reveal-image" data-reveal="0">
-        <img src="src/sc2.png" alt="Screenshot 2" class="reveal-image" data-reveal="1">
-        <img src="src/sc3.png" alt="Screenshot 3" class="reveal-image" data-reveal="2">
+      <img src="src/logo.png" alt="TailTag App Icon" class="app-icon-hero">
+      <h1 class="hero-title">
+        <span class="line">Your Aircraft Logbook</span>
+        <span class="line"><span class="text-gradient">Reinvented.</span></span>
+      </h1>
+      <p class="hero-subtitle">
+        Keep track of aircraft you have seen or flown on like never before with TailTag's clean, modern interface for iOS.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://apps.apple.com/us/app/tailtag/id6747738157" target="_blank" class="download-button">
+          <i class="fab fa-apple"></i> Download on App Store
+        </a>
+        <a href="https://testflight.apple.com/join/zXMv5qHd" target="_blank" class="beta-button">
+          <i class="fas fa-flask"></i> TestFlight Beta
+        </a>
       </div>
     </div>
   </section>
-
-  <section id="about" class="about-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">        
-          <div class="text-content fade-in-left" data-delay="100">
-            <h2 class="section-title">Built with <span class="text-gradient">SwiftUI</span></h2>
-            <p class="section-description">
-              TailTag is crafted entirely with SwiftUI, Apple's modern declarative UI framework. 
-              This means lightning-fast performance, seamless animations, and a truly native experience 
-              across all your Apple devices.
-            </p>
-            <div class="feature-highlights">
-              <div class="highlight-item" data-delay="300">
-                <i class="bi bi-lightning-charge"></i>
-                <span>Lightning Fast</span>
-              </div>
-              <div class="highlight-item">
-                <i class="bi bi-phone"></i>
-                <span>Native Experience</span>
-              </div>
-             
-            </div>
-          </div>
-        </div>      
-            <div class="col-lg-6">
-          <div class="image-container fade-in-up" data-delay="300">
-            <img src="src/swiftui.png" alt="SwiftUI" class="floating-image always-visible">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
   <section id="features" class="features-section">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="section-title fade-in-up">Why Choose <span class="text-gradient">TailTag</span>?</h2>
-        <p class="section-subtitle fade-in-up">Three simple reasons that make all the difference</p>
-      </div>
-      
+    <div class="section-header">
+      <h2>Why Choose TailTag?</h2>
+      <p>Three simple reasons that make all the difference</p>
+    </div>
+    
+    <div class="features-container">
       <div class="features-grid">
-        <div class="feature-card fade-in-up" data-delay="0">
+        <div class="feature-card">
           <div class="feature-icon">
-            <i class="bi bi-currency-dollar"></i>
+            <i class="fas fa-gift"></i>
           </div>
           <h3>Free Forever</h3>
           <p>No accounts. No ads. No subscriptions. TailTag is 100% free and always will be.</p>
         </div>
         
-        <div class="feature-card fade-in-up" data-delay="200">
+        <div class="feature-card">
           <div class="feature-icon">
-            <i class="bi bi-person-fill"></i>
+            <i class="fas fa-shield-alt"></i>
           </div>
           <h3>Privacy First</h3>
           <p>Everything stays on your device. No tracking, no data collection, no compromises.</p>
         </div>
         
-        <div class="feature-card fade-in-up" data-delay="400">
+        <div class="feature-card">
           <div class="feature-icon">
-            <i class="bi bi-universal-access"></i>
+            <i class="fas fa-universal-access"></i>
           </div>
           <h3>Accessible</h3>
           <p>Built with accessibility in mind, supporting VoiceOver, voice control, and more.</p>
         </div>
       </div>
+      
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon">
+          <i class="fa-brands fa-swift"></i>  
+                </div>
+          <h3>SwiftUI</h3>
+          <p>Modern, declarative UI framework for building beautiful interfaces across all Apple platforms</p>
+        </div>
+        
+        <div class="tech-card">
+          <div class="tech-icon">
+            <i class="fas fa-plane"></i>
+          </div>
+          <h3>CoreData</h3>
+          <p>Powerful data persistence framework for storing your aircraft logs securely on device</p>
+        </div>
+        
+        <div class="tech-card">
+          <div class="tech-icon">
+            <i class="fas fa-images"></i>
+          </div>
+          <h3>Photo Library</h3>
+          <p>Seamless photo upload from your device to attach images to your aircraft sightings and logs</p>
+        </div>
+        
+        <div class="tech-card">
+          <div class="tech-icon">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <h3>Accent colors</h3>
+          <p>Customise your experience with 10 curated accent colors to choose from.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screenshots" class="screenshots-section">
+    <div class="section-header">
+      <h2>See TailTag in Action</h2>
+      <p>Beautiful aircraft tracking with a clean, modern interface</p>
+    </div>
+    <div class="screenshots-container">
+      <div class="screenshot-item">
+        <img src="src/sc1.png" alt="TailTag Aircraft List" class="screenshot-img">
+      </div>
+      <div class="screenshot-item">
+        <img src="src/sc2.png" alt="TailTag Aircraft Details" class="screenshot-img">
+      </div>
+      <div class="screenshot-item">
+        <img src="src/sc3.png" alt="TailTag Settings" class="screenshot-img">
+      </div>
     </div>
   </section>
 
   <section id="privacy" class="privacy-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2">
-          <div class="text-content fade-in-right">
-            <h2 style="color: black" class="section-title">Your Privacy is <span class="text-gradient">Important</span></h2>
-            <p style="color: black" class="section-description">
-              In a world where your data is constantly harvested, TailTag takes a different approach. 
-              We believe your info is yours alone.
-            </p>
-            <div class="privacy-features">
-              <div class="privacy-item">
-                <i style="color: black" class="bi bi-shield-check"></i>
-                <div>
-                  <h4 style="color: black">No Tracking</h4>
-                  <p style="color: black">Zero analytics, ads, or third-party libraries</p>
-                </div>
-              </div>
-              <div class="privacy-item">
-                <i style="color: black" class="bi bi-person-x"></i>
-                <div>
-                  <h4 style="color: black">No Accounts</h4>
-                  <p style="color: black">No sign-ups, logins, or personal information required</p>
-                </div>
-              </div>
-              <div class="privacy-item">
-                <i style="color: black" class="bi bi-phone"></i>
-                <div>
-                  <h4 style="color: black">On Device Only</h4>
-                  <p style="color: black">All data stays locally on your device, always</p>
-                </div>
-              </div>
-            </div>
+    <div class="section-header">
+      <h2>Your Privacy is <span class="text-gradient">Important</span></h2>
+      <p>In a world where your data is constantly harvested, TailTag takes a different approach. We believe your aircraft data is yours alone.</p>
+    </div>
+    
+    <div class="privacy-container">
+      <div class="privacy-grid">
+        <div class="privacy-card">
+          <div class="privacy-icon">
+            <i class="fas fa-shield-alt"></i>
           </div>
+          <h3>No Tracking</h3>
+          <p>Zero analytics, ads, or third-party libraries</p>
         </div>
-        <div class="col-lg-6 order-lg-1">
-          <div class="image-container fade-in-left">
-            <div class="privacy-visual">
-              <div class="shield-icon">
-                <i style="color: black" class="bi bi-shield-lock"></i>
-              </div>
-            </div>
+        
+        <div class="privacy-card">
+          <div class="privacy-icon">
+            <i class="fas fa-user-slash"></i>
           </div>
+          <h3>No Accounts</h3>
+          <p>No sign-ups, logins, or personal information required</p>
+        </div>
+        
+        <div class="privacy-card">
+          <div class="privacy-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>On Device Only</h3>
+          <p>All data stays locally on your device, always</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="Accessibility" class="accessibility-section">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 style="color: black" class="section-title fade-in-up">Built for <span class="text-gradient-alt">Everyone</span></h2>
-        <p style="color: black" class="section-subtitle fade-in-up">Accessibility isn't an afterthought. It's fundamental</p>
+  <section id="accessibility" class="accessibility-section">
+    <div class="section-header">
+      <h2>Built for <span class="text-gradient">Everyone</span></h2>
+      <p>Accessibility isn't an afterthought. It's fundamental to great design.</p>
+    </div>
+    
+    <div class="accessibility-grid">
+      <div class="accessibility-card">
+        <i class="fas fa-volume-up"></i>
+        <h3>VoiceOver</h3>
+        <p>Full compatibility with screen readers and assistive technologies</p>
       </div>
       
-      <div class="accessibility-grid">
-        <div class="accessibility-card fade-in-up" data-delay="0">
-          <i style="color: black" class="bi bi-soundwave"></i>
-          <h3 style="color: black">VoiceOver</h3>
-          <p style="color: black" >Full compatibility with screen readers and assistive technologies</p>
-        </div>
-        
-        <div class="accessibility-card fade-in-up" data-delay="150">
-          <i style="color: black" class="bi bi-mic"></i>
-          <h3 style="color: black">Voice Control</h3>
-          <p style="color: black">Navigate and control the app using voice commands</p>
-        </div>
-        
-        <div class="accessibility-card fade-in-up" data-delay="300">
-          <i style="color: black" class="bi bi-palette"></i>
-          <h3 style="color: black">Visual Clarity</h3>
-          <p style="color: black">Clear visual indicators that don't rely on color alone</p>
-        </div>
-        
-        <div class="accessibility-card fade-in-up" data-delay="450">
-          <i style="color: black" class="bi bi-fonts"></i>
-          <h3 style="color: black">Dynamic Type</h3>
-          <p style="color: black">Adjustable text size for optimal readability</p>
-        </div>
+      <div class="accessibility-card">
+        <i class="fas fa-microphone"></i>
+        <h3>Voice Control</h3>
+        <p>Navigate and control the app using voice commands</p>
+      </div>
+      
+      <div class="accessibility-card">
+        <i class="fas fa-eye"></i>
+        <h3>Visual Clarity</h3>
+        <p>Clear visual indicators that don't rely on color alone</p>
+      </div>
+      
+      <div class="accessibility-card">
+        <i class="fas fa-text-height"></i>
+        <h3>Dynamic Type</h3>
+        <p>Adjustable text size for optimal readability</p>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p>&copy; 2025 TailTag. All rights reserved.</p>
-        <p>Made with ❤️ by Josh</p>
-      </div>
+    <div class="footer-content">
+      <p>&copy; 2025 TailTag. All rights reserved.</p>
+      <p>Made with ❤️ by Josh</p>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
