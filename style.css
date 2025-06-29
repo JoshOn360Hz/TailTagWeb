@@ -942,11 +942,7 @@ img.loaded {
     color: #5dade2;
   }
 
-  .nav-link:focus,
-  .download-button:focus,
-  .beta-button:focus {
-    outline: 2px solid #5dade2;
-  }
+
 
   @media (prefers-contrast: high) {
     body {
