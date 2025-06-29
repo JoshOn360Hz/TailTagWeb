@@ -865,9 +865,7 @@ img.loaded {
     color: #e0e0e0;
   }
 
-  .nav-menu {
-    background: rgba(26, 26, 26, 0.98);
-  }
+  
 
   .hero {
     background: linear-gradient(135deg, #2c3e50 0%, #1a1a2e 100%);
@@ -944,23 +942,4 @@ img.loaded {
 
 
 
-  @media (prefers-contrast: high) {
-    body {
-      background: #000;
-      color: #fff;
-    }
-
-    .feature-card,
-    .privacy-card,
-    .accessibility-card,
-    .tech-card {
-      background: #000;
-      border: 2px solid #fff;
-    }
-
-    .navbar {
-      background: rgba(0, 0, 0, 0.98);
-      border-bottom: 1px solid #fff;
-    }
-  }
 }
