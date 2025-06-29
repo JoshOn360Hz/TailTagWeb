@@ -213,6 +213,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateScrollEffects() {
         ticking = false;
     }
+    
 
     function requestTick() {
         if (!ticking) {

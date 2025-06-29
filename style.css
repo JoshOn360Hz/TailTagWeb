@@ -1,6 +1,4 @@
-/* Modern TailTag Website Styles - Test Version */
 
-/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -19,14 +17,12 @@ body {
   overflow-x: hidden;
 }
 
-/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Navigation */
 .navbar {
   position: fixed;
   top: 0;
@@ -88,7 +84,6 @@ body {
   width: 100%;
 }
 
-/* Hamburger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -116,7 +111,6 @@ body {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Hero Section */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -240,7 +234,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Features Section */
 .features-section {
   padding: 8rem 0;
   background: #f8f9fa;
@@ -321,7 +314,6 @@ body {
   line-height: 1.6;
 }
 
-/* Tech Stack Section */
 .tech-stack-header {
   text-align: center;
   margin: 4rem 0 2rem;
@@ -375,7 +367,6 @@ body {
   line-height: 1.4;
 }
 
-/* Screenshots Section */
 .screenshots-section {
   padding: 8rem 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -409,7 +400,6 @@ body {
   border-radius: 15px;
 }
 
-/* Privacy Section */
 .privacy-section {
   padding: 8rem 0;
   background: #f8f9fa;
@@ -470,7 +460,6 @@ body {
   line-height: 1.6;
 }
 
-/* Accessibility Section */
 .accessibility-section {
   padding: 8rem 0;
   background: #f8f9fa;
@@ -518,7 +507,6 @@ body {
   line-height: 1.6;
 }
 
-/* Tech Cards (fixing the styling) */
 .tech-card {
   background: white;
   padding: 2rem 1.5rem;
@@ -533,6 +521,7 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
+
 
 .tech-icon {
   width: 60px;
@@ -566,7 +555,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* Footer */
 .footer {
   background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   color: white;
@@ -585,9 +573,7 @@ body {
   opacity: 0.8;
 }
 
-/* Additional Styles and Improvements */
 
-/* Navbar scrolled state */
 .navbar.scrolled {
   background: rgba(255, 255, 255, 0.98);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
@@ -602,7 +588,6 @@ body {
   background: #2c3e50;
 }
 
-/* Page loaded state */
 .loaded .hero-content {
   animation: fadeInUp 1s ease forwards;
 }
@@ -618,20 +603,17 @@ body {
   }
 }
 
-/* Image loaded state */
 img.loaded {
   opacity: 1;
   transition: opacity 0.5s ease;
 }
 
-/* Reduce motion support */
 .reduce-motion * {
   animation-duration: 0.01ms !important;
   animation-iteration-count: 1 !important;
   transition-duration: 0.01ms !important;
 }
 
-/* Touch device optimizations */
 .touch-device .feature-card:hover,
 .touch-device .tech-card:hover,
 .touch-device .privacy-card:hover,
@@ -645,7 +627,6 @@ img.loaded {
   transform: none;
 }
 
-/* High contrast mode improvements */
 @media (prefers-contrast: high) {
   .accessibility-card,
   .feature-card,
@@ -655,7 +636,6 @@ img.loaded {
   }
 }
 
-/* Print styles */
 @media print {
   .navbar,
   .hamburger,
@@ -680,7 +660,6 @@ img.loaded {
   }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -742,7 +721,6 @@ img.loaded {
     gap: 1.5rem;
   }
 
-  /* Hide first and third screenshots on mobile, only show center one */
   .screenshot-item:nth-child(1),
   .screenshot-item:nth-child(3) {
     display: none !important;
@@ -811,7 +789,6 @@ img.loaded {
   }
 }
 
-/* Animations and Utilities */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -835,7 +812,6 @@ img.loaded {
   margin-bottom: 3rem;
 }
 
-/* Smooth scrolling enhancement */
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
@@ -843,7 +819,6 @@ img.loaded {
 }
 
 
-/* High contrast mode support */
 @media (prefers-contrast: high) {
   .hero {
     background: #000;
@@ -855,14 +830,12 @@ img.loaded {
   }
 }
 
-/* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   body {
     background: #1a1a1a;
     color: #e0e0e0;
   }
 
-  /* Navigation */
   .navbar {
     background: rgba(26, 26, 26, 0.95);
     border-bottom: 1px solid #333;
@@ -892,17 +865,14 @@ img.loaded {
     color: #e0e0e0;
   }
 
-  /* Mobile menu */
   .nav-menu {
     background: rgba(26, 26, 26, 0.98);
   }
 
-  /* Hero Section */
   .hero {
     background: linear-gradient(135deg, #2c3e50 0%, #1a1a2e 100%);
   }
 
-  /* Sections */
   .features-section,
   .privacy-section,
   .accessibility-section {
@@ -913,7 +883,6 @@ img.loaded {
     background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
   }
 
-  /* Section headers */
   .section-header h2 {
     color: #e0e0e0;
   }
@@ -922,7 +891,6 @@ img.loaded {
     color: #b0b0b0;
   }
 
-  /* Cards */
   .feature-card,
   .privacy-card,
   .accessibility-card,
@@ -940,7 +908,6 @@ img.loaded {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   }
 
-  /* Card content */
   .feature-card h3,
   .privacy-card h3,
   .accessibility-card h3,
@@ -955,12 +922,10 @@ img.loaded {
     color: #b0b0b0;
   }
 
-  /* Tech stack header */
   .tech-stack-header p {
     color: #b0b0b0;
   }
 
-  /* Footer */
   .footer {
     background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
   }
@@ -969,7 +934,6 @@ img.loaded {
     color: #b0b0b0;
   }
 
-  /* Accessibility icons - adjust colors for dark mode */
   .accessibility-card i {
     color: #5dade2;
   }
@@ -978,14 +942,12 @@ img.loaded {
     color: #5dade2;
   }
 
-  /* Focus states for dark mode */
   .nav-link:focus,
   .download-button:focus,
   .beta-button:focus {
     outline: 2px solid #5dade2;
   }
 
-  /* High contrast override for dark mode */
   @media (prefers-contrast: high) {
     body {
       background: #000;
